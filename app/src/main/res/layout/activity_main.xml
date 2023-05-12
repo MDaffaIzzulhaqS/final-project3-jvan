@@ -11,7 +11,6 @@
         android:layout_height="match_parent"
         android:id="@+id/solution_tv"
         android:layout_margin="16dp"
-        android:text="0"
         android:textSize="32dp"
         android:textAlignment="textEnd"
         android:textColor="@color/black"
