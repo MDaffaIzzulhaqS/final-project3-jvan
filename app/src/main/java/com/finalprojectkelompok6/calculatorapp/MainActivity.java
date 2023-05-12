@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         assignId(button9,R.id.button_9);
         assignId(buttonAC,R.id.button_ac);
         assignId(buttonDot,R.id.button_dot);
+
     }
 
     void assignId(MaterialButton btn,int id){
@@ -90,9 +91,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             context.setOptimizationLevel(-1);
             Scriptable scriptable = context.initStandardObjects();
             String finalResult =  context.evaluateString(scriptable,data,"Javascript",1,null).toString();
-            if(finalResult.endsWith(".0")){
-                finalResult = finalResult.replace(".0","");
-            }
             return finalResult;
         }catch (Exception e){
             return "Err";
